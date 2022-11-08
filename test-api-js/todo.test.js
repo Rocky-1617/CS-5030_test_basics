@@ -35,4 +35,8 @@ describe('todo test suite', () => {
         expect(todo_service.delete_todo('T1').length===2);
     });
 
+    test("update_todo", () => {
+        expect(todo_service.update_todo('T2',"this is new Description"));
+    });
+
 });

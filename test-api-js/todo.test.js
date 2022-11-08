@@ -22,6 +22,15 @@ describe('todo test suite', () => {
     
 
     // Write all your test cases here that corresponds to software requirements
+    test("add_todo", () => {
+        let todo={
+            "title": "T1",
+            "description": "D4",
+            "done": false
+        }
+        todo_service.add_todo(todo);
+        expect(todo_service.get_todos().todo.length).toEqual(4);
 
+    });
 
 });

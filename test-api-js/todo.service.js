@@ -33,9 +33,10 @@ class todoservice{
         }
     
 
-    update_todo(id, todo){
-        // Your code here
-    }
+        update_todo(id, todo) {
+            // Your code here
+            return this.todo_data["todo"].map(p => p.title === id ? p.description = todo : p)
+        }
 }
 
 
